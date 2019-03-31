@@ -1,0 +1,21 @@
+
+logging.level.com.netflix.hystrix: DEBUG
+
+
+management:
+  security:
+    enabled: false
+  metrics:
+    binders:
+      hystrix:
+        enabled: true
+
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+  prometheus:
+    enabled: true
+  metrics:
+    enabled: true
+
